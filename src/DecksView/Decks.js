@@ -39,53 +39,49 @@ export default function Decks({ deck, setDeck, reRender, setReRender }) {
     }
   };
 
-
   return (
-      <Fragment>
+    <Fragment>
+      <div>
+        <nav aria-label="breadcrumb">
+          <ol className="breadcrumb">
+            <li className="breadcrumb-item">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="breadcrumb-item active" aria-current="page">
+              {deck.name}
+            </li>
+          </ol>
+        </nav>
+        <div>
+          <h3>{deck.name}</h3>
           <div>
-            <nav aria-label="breadcrumb">
-              <ol className="breadcrumb">
-                <li className="breadcrumb-item">
-                  <Link to="/">Home</Link>
-                </li>
-                <li className="breadcrumb-item active" aria-current="page">
-                  {deck.name}
-                </li>
-              </ol>
-            </nav>
-            <div>
-              <h3>{deck.name}</h3>
-              <div>
-              <h5>{deck.description}</h5>
-              </div>
-              <div className="row">
-                <Link
-                  to={`/decks/${deck.id}/edit`}
-                  className="btn btn-secondary"
-                >
-                  Edit
-                </Link>
-                <Link to={`/decks/${deck.id}/study`} className="btn btn-primary">
-                  Study
-                </Link>
-                <Link
-                  to={`/decks/${deck.id}/cards/new`}
-                  className="btn btn-primary"
-                >
-                  Add Cards
-                </Link>
-                <button className="btn btn-danger" onClick={deckDeleteHandler}>
-                  Trash
-                </button>
-              </div>
-              <div>
-                <h2>Cards</h2>
-              </div>
-              <div>
-                <CardList cards={deck.cards} />
-              </div>
-            </div>
+            <h5>{deck.description}</h5>
           </div>
-      </Fragment>
+          <div className="row">
+            <Link to={`/decks/${deck.id}/edit`} className="btn btn-secondary">
+              Edit
+            </Link>
+            <Link to={`/decks/${deck.id}/study`} className="btn btn-primary">
+              Study
+            </Link>
+            <Link
+              to={`/decks/${deck.id}/cards/new`}
+              className="btn btn-primary"
+            >
+              Add Cards
+            </Link>
+            <button className="btn btn-danger" onClick={deckDeleteHandler}>
+              Trash
+            </button>
+          </div>
+          <div>
+            <h2>Cards</h2>
+          </div>
+          <div>
+            <CardList cards={deck.cards} />
+          </div>
+        </div>
+      </div>
+    </Fragment>
   );
 }
