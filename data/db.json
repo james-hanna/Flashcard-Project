@@ -1,0 +1,87 @@
+{
+  "decks": [
+    {
+      "name": "James Hanna",
+      "description": "first deck",
+      "id": 1
+    },
+    {
+      "name": "second deck",
+      "description": "lol",
+      "id": 2
+    },
+    {
+      "name": "third Short Deck",
+      "description": "Hello",
+      "id": 3
+    }
+  ],
+  "cards": [
+    {
+      "front": "first card",
+      "back": "first back",
+      "deckId": 1,
+      "id": 1
+    },
+    {
+      "front": "fourth card",
+      "back": "fourth back",
+      "deckId": 1,
+      "id": 4
+    },
+    {
+      "front": "another card",
+      "back": "another back",
+      "deckId": 2,
+      "id": 5
+    },
+    {
+      "front": "next card",
+      "back": "next back",
+      "deckId": 2,
+      "id": 6
+    },
+    {
+      "front": "one more",
+      "back": "like",
+      "deckId": 1,
+      "id": 7
+    },
+    {
+      "front": "once ju",
+      "back": "5",
+      "deckId": 2,
+      "id": 8
+    },
+    {
+      "front": "First Card",
+      "back": "Yo",
+      "deckId": 3,
+      "id": 9
+    },
+    {
+      "front": "Second Card",
+      "back": "Still Not Enough",
+      "deckId": 3,
+      "id": 10
+    },
+    {
+      "front": "sixth card",
+      "back": "sixth back",
+      "deckId": 1,
+      "id": 11
+    },
+    {
+      "front": "another card",
+      "back": "another back",
+      "deckId": 2,
+      "id": 12
+    },
+    {
+      "front": "adding a card",
+      "back": "testing",
+      "deckId": 1,
+      "id": 13
+    }
+  ]
+}
